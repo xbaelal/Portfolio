@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --nav-color: #161513;
+    --main-bg: #312f2b;
+    --font-color: #F3F3F3;
+    --btn-color: #7692FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+nav, .nav-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: var(--nav-color);
+    color: var(--font-color);
+}
+
+.nav-contents{
+    width: 20%;
+}
+
+.portfolio-heading, .nav-btn{
+    margin: 0 4vw;
+}
+
+.nav-btn, .btn, .btn-second{
+    outline: none;
+    border: none;
+    height: 50%;
+    width: 10vw;
+    font-weight: 700;
+}
+.nav-btn{
+    background-color: var(--btn-color);
+    border-radius: 16px 0 16px 0;
+}
+
+
+.nav-btn a,a:visited{
+    color: var(--nav-color);
+    text-decoration: none;
+}
+
+main{
+    height: calc(100vh - 55px);
+    background-color: var(--main-bg);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+
+.main-heading-colored{
+    color: var(--btn-color);
+    font-size: 3rem;
+}
+
+.buttons-div{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    background-color: var(--btn-color);
+    border-radius: 20px;
+}
+.btn-second{
+    background-color: var(--font-color);
+    margin-left: 10px;
+    border-radius: 20px;
+}
