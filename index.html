@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <nav>
         <h3 class="portfolio-heading">Bilal's Portfolio</h3>
         <div class="nav-contents">
-            <h5>Home</h5>
-            <h5>Projects</h5>
-            <h5>Skills</h5>
-            <h5>About</h5>
+            <ul>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Skills</li>
+                <li>About</li>
+            </ul>
         </div>
         <button class="nav-btn"><a href="mailto:memonbilal760@gmail.com">LET'S TALK</a></button>
     </nav>
@@ -31,9 +38,44 @@
             <!-- <p>Fond of creating web application designs and bring them to life using HTML, CSS and JavaScript.</p> -->
         </div>
         <div class="buttons-div">
-            <button class="btn">GET IN TOUCH</button>
-            <button class="btn-second">VIEW ALL WORKS</button>
+            <button class="btn"><a href="mailto:memonbilal760@gmail.com">GET IN TOUCH</a></button>
+            <button class="btn-second"><a href="#projects">VIEW ALL WORKS</a></button>
         </div>
     </main>
+    <section class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="project-card-container"></div>
+    </section>
+    <section class="skills">
+        <h1 class="heading">Skills</h1>
+        <div class="skills-container"> </div>
+    </section>
+    <section class="about">
+        <h1 class="heading">Bilal Muhammad Ahmed, Front-End Developer.</h1>
+        <p>
+            Hey, I'm a front-end developer skilled in HTML, CSS, and JavaScript, with a focus on creating responsive and intuitive user interfaces. I specialize in designing websites that seamlessly adapt to various devices and screen sizes while delivering a visually appealing user experience. I have earned certificates from <span><a href="https://www.freecodecamp.org/xbaelal" target="_blank" >freeCodeCamp</a></span>, showcasing my expertise in web development and commitment to continuous learning and professional growth. Additionally, I'm currently a student learning full stack development at <span><a href="https://baitussalam.org/tech-park" target="_blank">BWT TechPark</a></span>, where I continue to expand my skills and knowledge in web development.
+        </p>
+    </section>
+
+    <section class="project-discussion">
+        <h1>Have An Awesome Project Idea? <br> Let's Discuss</h1>
+        <div class="start-project">
+            <h3>
+                <a href="https://www.linkedin.com/in/baelal/" target="_blank">
+                    Start Project
+                </a> 
+            </h3>
+        </div>
+    </section>
+
+    <div id="contact">
+        <h1 class="heading">Get in Touch!</h1>
+        <div id="social-links"></div>
+    </div>
+
+
+    <footer>&#169; Bilal Muhammad Ahmed - 2024</footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
