@@ -19,6 +19,15 @@ body{
     width: 100%;
 }
 
+.buttons-div a , .buttons-div a:visited, nav #contact-link{
+    color: var(--nav-color);
+    text-decoration: none;
+}
+
+a, a:visited{
+    color: var(--font-color);
+    text-decoration: none;
+}
 
 nav h3{
     cursor: pointer;
@@ -72,12 +81,6 @@ nav{
     border-radius: 16px 0 16px 0;
 }
 
-
-a,a:visited{
-    color: var(--nav-color);
-    text-decoration: none;
-}
-
 main{
     height: calc(100vh - 55px);
     background-color: var(--main-bg);
@@ -115,6 +118,10 @@ main{
     background-color: var(--main-bg);
     padding: 10px;
     text-align: center;
+}
+
+.projects .heading{
+    padding-bottom: 4rem;
 }
 
 .heading{
@@ -201,7 +208,7 @@ vertical-align: text-top;
     margin: 60px auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--nav-color);
+    background-color: var(--btn-color);
   }
   
 .skills-container .bg {
@@ -221,7 +228,7 @@ vertical-align: text-top;
 }
 
 .about {
-    width: 100dvw;
+    width: 100%;
     min-height: 60dvh;
     margin: 0 auto;
     padding: 30px;
@@ -255,12 +262,12 @@ vertical-align: text-top;
 
 .start-project{
     text-align: center;
-    background-color: var(--nav-color);
+    background-color: var(--main-bg);
     width: 200px;
     border-radius: 50% ;
     height: 200px;
     color: var(--font-color);
-    
+    box-shadow: -7px 5px 10px 0.1px var(--nav-color);    
 }
 
 .start-project h3{
@@ -279,9 +286,38 @@ vertical-align: text-top;
     padding: 20px;
 }
 
+#social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 50%;
+  }
+
+.link {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+  
+.link:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+.link img{
+    height: 5rem;
+    width: 5rem;
+}
+
 footer{
     background-color: var(--nav-color);
     color: var(--font-color);
     text-align: center;
     height: 5vh;
+    padding: 9px;
 }

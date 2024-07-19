@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bilal's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dadewffae/image/upload/v1721388456/portfolio-favicon.png"
     />
     <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,15 +21,15 @@
         <h3 class="portfolio-heading">Bilal's Portfolio</h3>
         <div class="nav-contents">
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>About</li>
+                <li><a id="home-link" href="#home">Home</a></li>
+                <li><a id="project-link" href="#projects">Projects</a></li>
+                <li><a id="skills-link" href="#skills">Skills</a></li>
+                <li><a id="about-link" href="#about">About</a></li>
             </ul>
         </div>
-        <button class="nav-btn"><a href="mailto:memonbilal760@gmail.com">LET'S TALK</a></button>
+        <button class="nav-btn"><a id="contact-link" href="#contact">LET'S TALK</a></button>
     </nav>
-    <main>
+    <main id="home">
         <div class="main-heading-div">
              <h1>Hello, I'm 
             <span class="main-heading-colored">
@@ -46,11 +51,11 @@
         <h1 class="heading">Projects</h1>
         <div class="project-card-container"></div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <h1 class="heading">Skills</h1>
         <div class="skills-container"> </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <h1 class="heading">Bilal Muhammad Ahmed, Front-End Developer.</h1>
         <p>
             Hey, I'm a front-end developer skilled in HTML, CSS, and JavaScript, with a focus on creating responsive and intuitive user interfaces. I specialize in designing websites that seamlessly adapt to various devices and screen sizes while delivering a visually appealing user experience. I have earned certificates from <span><a href="https://www.freecodecamp.org/xbaelal" target="_blank" >freeCodeCamp</a></span>, showcasing my expertise in web development and commitment to continuous learning and professional growth. Additionally, I'm currently a student learning full stack development at <span><a href="https://baitussalam.org/tech-park" target="_blank">BWT TechPark</a></span>, where I continue to expand my skills and knowledge in web development.

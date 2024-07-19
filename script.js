@@ -1,7 +1,9 @@
+const links = document.querySelectorAll("#home-link, #project-link, #skills-link, #about-link, #contact-link")
 const projectsSection = document.querySelector(".projects");
 const projectsCardContainer = document.querySelector(".project-card-container");
 const skillContainer = document.querySelector(".skills")
 const skillCardContainer = document.querySelector(".skills-container")
+const contactsContainer = document.getElementById("social-links")
 
 const projects = [
     {
@@ -155,6 +157,16 @@ const skills = [
     },
   ];
 
+ links.forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 for (const project of projects) {
     const projectCard = document.createElement("div");
     projectCard.id = `project-${project.id}`;
@@ -165,7 +177,7 @@ for (const project of projects) {
     <h2>${project.title}</h2>
     <p>${project.description}</p>
     <div class="link-container">
-    <a class="live-link" href="${project.liveUrl}"><i class="material-symbols-outlined live-icon"> visibility</i> Live</a>
+    <a class="live-link" href="${project.liveUrl}" target="_blank"><i class="material-symbols-outlined live-icon"> visibility</i> Live</a>
     <a class="github-link" href="${project.githubLink}">Github</a>
     </div>`;
 
@@ -181,3 +193,12 @@ for (const skill of skills) {
     bgEl.appendChild(imgEl);
     skillCardContainer.appendChild(bgEl);
   }
+
+  socialLinks.forEach((link) => {
+    const linksToContainer = 
+    `<a href="${link.url}" target="_blank"
+    <div class="link" title="${link.platform}"><img src="${link.icon}" alt="${link.platform}"></div>
+    </a>`
+    
+    contactsContainer.innerHTML += linksToContainer
+  })
