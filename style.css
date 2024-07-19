@@ -49,7 +49,7 @@ nav, .nav-contents{
 }
 
 .nav-contents ul li{
-    padding-left: 3rem;
+    padding-left: 2rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -60,6 +60,10 @@ nav{
     background-color: var(--nav-color);
     color: var(--font-color);
 }
+
+#burger-menu {
+    display: none;
+  }
 
 .nav-contents{
     width: 20%;
@@ -114,7 +118,7 @@ main{
 }
 
 .projects{
-    min-height: 100dvh;
+    min-height: 100vh;
     background-color: var(--main-bg);
     padding: 10px;
     text-align: center;
@@ -150,6 +154,7 @@ main{
     margin: 0;
     padding: 10px;
     border: 3px solid var(--nav-color);
+    background-color: var(--btn-color);
 }
 
 .card img {
@@ -159,6 +164,7 @@ width: 100%;
 height: 125px;
 margin: 0px auto;
 border-radius: 10px;
+object-fit: contain;
 }
 
 .card h2 {
@@ -193,13 +199,13 @@ vertical-align: text-top;
 }
 
 .skills {
-    min-height: 60dvh;
-    padding: 200px 20px;
+    min-height: 60vh;
+    padding: 100px 20px;
     background-color: var(--main-bg);
 }
 
 .skills-container {
-    width: 50dvw;
+    width: 50vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -229,15 +235,20 @@ vertical-align: text-top;
 
 .about {
     width: 100%;
-    min-height: 60dvh;
+    min-height: 60vh;
     margin: 0 auto;
-    padding: 30px;
+    padding: 50px;
     align-items: center;
     background-color: var(--main-bg);
     color: var(--font-color);
     font-size: 22px;
     font-weight: 400;
     text-align: center;
+  }
+
+  .about-section{
+    width: 70%;
+    margin: 0 auto;
   }
 
 .about h1{
@@ -258,6 +269,7 @@ vertical-align: text-top;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 15px;
 }
 
 .start-project{
@@ -271,7 +283,7 @@ vertical-align: text-top;
 }
 
 .start-project h3{
-    padding: 2rem;
+    padding-top: 2.5rem;
 }
 
 .start-project h3 a,.start-project h3 a:visited{
@@ -281,7 +293,7 @@ vertical-align: text-top;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 40dvh;
+    min-height: 40vh;
     background-color: var(--main-bg);
     padding: 20px;
 }
@@ -319,5 +331,99 @@ footer{
     color: var(--font-color);
     text-align: center;
     height: 5vh;
-    padding: 9px;
+    padding: 1vh;
 }
+
+@media screen and (max-width: 720px) {
+    #burger-menu {
+      display: block;
+      padding: 10px 20px;
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      background-color: transparent;
+    }
+  
+    #burger-icon {
+      color: var(--font-color);
+      cursor: pointer;
+    }
+  
+    #burger-menu-content {
+      background-color: var(--nav-color);
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  
+    .hidden {
+      display: none;
+    }
+  
+    #burger-menu-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #burger-menu-content ul a, #burger-menu-content .nav-btn {
+      display: block;
+      text-decoration: none;
+      color: var(--font-color);
+      padding: 5px 0;
+      margin: 0;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    #burger-menu-content .nav-btn{
+        width: 100%;
+        background-color: unset;
+    }
+
+    nav{
+        display: none;
+    }
+
+    main{
+        padding-left: 30px;
+    }
+
+    .buttons-div{
+        height: 120px;
+    }
+    
+    .btn, .btn-second{
+        height: 50%;
+        width: 27vw;
+        font-weight: 700;
+    }
+
+    .about{
+        padding: 40px;
+    }
+
+    .about-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-discussion{
+        height: 30vh;    
+        font-size: 1.3em;
+        padding: 15px;
+    }
+
+    .start-project{
+        height: 140px;
+        width: 300px
+    }
+
+    .start-project h3{
+        padding-top: 2rem;
+    }
+
+    .link img{
+        height: 4rem;
+        width: 4rem;
+    }
+}  

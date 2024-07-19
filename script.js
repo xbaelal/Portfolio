@@ -1,9 +1,11 @@
-const links = document.querySelectorAll("#home-link, #project-link, #skills-link, #about-link, #contact-link")
+const links = document.querySelectorAll("#home-link, #project-link, #project-link2, #skills-link, #about-link, #contact-link, #contact-link2")
 const projectsSection = document.querySelector(".projects");
 const projectsCardContainer = document.querySelector(".project-card-container");
 const skillContainer = document.querySelector(".skills")
 const skillCardContainer = document.querySelector(".skills-container")
 const contactsContainer = document.getElementById("social-links")
+const burgerMenuIcon = document.getElementById("burger-icon");
+const burgerMenuContent = document.getElementById("burger-menu-content");
 
 const projects = [
     {
@@ -202,3 +204,13 @@ for (const skill of skills) {
     
     contactsContainer.innerHTML += linksToContainer
   })
+
+  burgerMenuIcon.addEventListener("click", () => {
+    if (burgerMenuIcon.innerHTML === "menu") {
+      burgerMenuIcon.innerHTML = "close";
+    } else {
+      burgerMenuIcon.innerHTML = "menu";
+    }
+  
+    burgerMenuContent.classList.toggle("hidden");
+  });
