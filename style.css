@@ -277,7 +277,7 @@ padding-top: 1px;
 }
 
 .about a, .about a:visited{
-    color: var(--btn-color);
+    color: var(--primary);
 }
 
 
