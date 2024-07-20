@@ -180,7 +180,6 @@ for (const project of projects) {
     <p>${project.description}</p>
     <div class="link-container">
     <a class="live-link" href="${project.liveUrl}" target="_blank"><i class="material-symbols-outlined live-icon"> visibility</i> Live</a>
-    <a class="github-link" href="${project.githubLink}">Github</a>
     </div>`;
 
     projectsCardContainer.appendChild(projectCard);
