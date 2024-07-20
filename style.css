@@ -79,6 +79,10 @@ nav{
     margin: 0 4vw;
 }
 
+.portfolio-heading-animation{-webkit-animation:portfolio-heading-animation 1.5s cubic-bezier(.645,.045,.355,1.000) 1s both;animation:portfolio-heading-animation 1.5s cubic-bezier(.645,.045,.355,1.000) 1s both}
+
+@-webkit-keyframes gitportfolio-heading-animation{0%{letter-spacing:1em;-webkit-transform:translateZ(400px);transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes portfolio-heading-animation{0%{letter-spacing:1em;-webkit-transform:translateZ(400px);transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+
 .nav-btn, .btn, .btn-second{
     outline: none;
     border: none;
