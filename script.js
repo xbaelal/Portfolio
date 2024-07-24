@@ -78,6 +78,16 @@ const projects = [
         liveUrl: "https://xbaelal.github.io/Calorie-Counter/",
         githubLink: "https://github.com/xbaelal/Calorie-Counter",
       },
+    {
+        id: 8,
+        title: "Tic Tac Toe",
+        description:
+          '"Developed a JavaScript-powered Tic Tac Toe game featuring an intuitive user interface and seamless interactivity."',
+        imgSrc:
+          "https://res.cloudinary.com/dadewffae/image/upload/v1721821024/tictac-game.png",
+        liveUrl: "https://xbaelal.github.io/tic-tac-toe/",
+        githubLink: "https://github.com/xbaelal/tic-tac-toe",
+      },
 ]
 
 // Projects to be added in the above array 
