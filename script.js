@@ -88,6 +88,16 @@ const projects = [
         liveUrl: "https://xbaelal.github.io/tic-tac-toe/",
         githubLink: "https://github.com/xbaelal/tic-tac-toe",
       },
+    {
+        id: 8,
+        title: "Grab & Go",
+        description:
+          '"Jump, grab, and ascend through a block-filled world using arrow keys in this dynamic JavaScript adventure."',
+        imgSrc:
+          "https://res.cloudinary.com/dadewffae/image/upload/v1722005423/grabngo.png",
+        liveUrl: "https://xbaelal.github.io/Portfolio/grab-n-go/",
+        githubLink: "https://github.com/xbaelal/Portfolio/tree/main/grab-n-go",
+      },
 ]
 
 // Projects to be added in the above array 
