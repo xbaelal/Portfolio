@@ -89,7 +89,7 @@ const projects = [
         githubLink: "https://github.com/xbaelal/tic-tac-toe",
       },
     {
-        id: 8,
+        id: 9,
         title: "Grab & Go",
         description:
           '"Jump, grab, and ascend through a block-filled world using arrow keys in this dynamic JavaScript adventure."',
