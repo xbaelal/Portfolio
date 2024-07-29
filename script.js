@@ -98,6 +98,16 @@ const projects = [
         liveUrl: "https://xbaelal.github.io/Portfolio/grab-n-go/",
         githubLink: "https://github.com/xbaelal/Portfolio/tree/main/grab-n-go",
       },
+    {
+        id: 10,
+        title: "Calculator",
+        description:
+          '"Developed a robust calculator application using JavaScript, featuring an intuitive interface and accurate computation capabilities."',
+        imgSrc:
+          "https://res.cloudinary.com/dadewffae/image/upload/v1722248635/calc.png",
+        liveUrl: "https://xbaelal.github.io/Portfolio/Calculator/",
+        githubLink: "https://github.com/xbaelal/Portfolio/tree/main/Calculator",
+      },
 ]
 
 // Projects to be added in the above array 
