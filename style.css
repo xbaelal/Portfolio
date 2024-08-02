@@ -8,6 +8,11 @@
   --project: #095ea3a1;
 }
 
+@font-face {
+  font-family: Neue;
+  src: url(./assets/NeueMachina-Regular.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -175,7 +180,6 @@ main {
   background-color: var(--background);
   padding: 10px;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .projects .heading {
@@ -258,6 +262,36 @@ main {
   font-size: 1.5rem;
   vertical-align: text-top;
   padding-top: 1px;
+}
+
+#page2 {
+  padding: 5vw 0;
+}
+
+#move {
+  background-color: #6194c4;
+  display: flex;
+  padding: 3vw 0;
+  overflow: hidden;
+}
+
+.marque img {
+  height: 3.2vw;
+  transform: rotate(90deg);
+}
+
+.marque h1 {
+  font-size: 3vw;
+  font-family: Neue;
+}
+
+.marque {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+  transform: translateX(-100%);
 }
 
 .skills {
@@ -522,7 +556,7 @@ footer {
   #burger-menu-content .nav-btn {
     display: block;
     text-decoration: none;
-    color: var(--text);
+    color: var(--background);
     padding: 5px 0;
     margin: 0;
     text-align: center;
