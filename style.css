@@ -250,6 +250,7 @@ main {
   background-color: #0f5ec55d;
   width: 80%;
   border-radius: 25px;
+  padding: 0.4rem;
 }
 
 .card a:hover {
@@ -628,5 +629,9 @@ footer {
   .link img {
     height: 3rem;
     width: 3rem;
+  }
+
+  #page2 {
+    display: none;
   }
 }
